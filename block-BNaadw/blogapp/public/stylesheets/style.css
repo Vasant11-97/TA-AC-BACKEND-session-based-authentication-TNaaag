@@ -139,6 +139,9 @@ table {
 .align-items {
   align-items: center;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 a {
   text-decoration: none;
 }
@@ -205,4 +208,14 @@ h1 {
   margin: 1rem 0;
   padding: 1rem 0;
   outline: none;
+}
+
+.blog {
+  width: 30%;
+  margin-top: 3rem;
+  padding: 1rem 1rem;
+  border: 1px solid black;
+}
+.blog p {
+  margin: 0.75rem 0;
 }

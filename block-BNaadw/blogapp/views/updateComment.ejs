@@ -25,24 +25,20 @@
       </nav>
     </header>
     <main class="container user">
-      <fieldset class="form addblog">
-        <form action="/blogs/new" method="post">
-          <input type="text" name="title" placeholder="Enter title" />
-          <input
-            type="text"
-            name="description"
+      <div class="comment">
+        <form action="/blogs/<%= slug %>/<%= comment.id %>" method="post">
+          <textarea
+            name="content"
             id=""
-            placeholder="Enter details of Blog"
-          />
-          <input
-            type="text"
-            name="author"
-            id=""
-            placeholder="Enter author name"
-          />
-          <input class="submit" type="submit" value="Submit" />
+            cols="30"
+            rows="5"
+            placeholder="Enter comment"
+          >
+          <%= comment.content %>
+          </textarea>
+          <input type="submit" value="Submit" />
         </form>
-      </fieldset>
+      </div>
     </main>
   </body>
 </html>

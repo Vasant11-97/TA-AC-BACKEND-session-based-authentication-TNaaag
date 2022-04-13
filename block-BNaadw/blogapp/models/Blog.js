@@ -7,7 +7,7 @@ var blogSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String },
   likes: { type: Number, default: 0 },
-  commemnts: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+  comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
   author: { type: String },
   slug: {
     type: String,

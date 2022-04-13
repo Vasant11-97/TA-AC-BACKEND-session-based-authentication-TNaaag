@@ -54,7 +54,7 @@ router.post('/login', (req, res, next) => {
         return res.redirect('/users/login');
       }
       req.session.userId = user.id;
-      res.redirect('/users');
+      res.redirect('/blogs');
     });
   });
 });
