@@ -27,18 +27,25 @@
     <main class="container user">
       <fieldset class="form addblog">
         <form action="/blogs/new" method="post">
-          <input type="text" name="title" placeholder="Enter title" />
+          <input
+            type="text"
+            name="title"
+            placeholder="Enter title"
+            value="<%= blog.title %>"
+          />
           <input
             type="text"
             name="description"
             id=""
             placeholder="Enter details of Blog"
+            value="<%= blog.description %>"
           />
           <input
             type="text"
             name="author"
             id=""
             placeholder="Enter author name"
+            value="<%= blog.author %>"
           />
           <input class="submit" type="submit" value="Submit" />
         </form>
